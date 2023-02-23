@@ -9,11 +9,10 @@ import SwiftUI
 
 struct GameTabView: View {
     let foodChoice: FoodChoice
-    @Binding var score: Int
     
     var body: some View {
         TabView {
-            LucrativeGameView(foodChoiceText: foodChoice.rawValue, score: $score)
+            LucrativeGameView(foodChoiceText: foodChoice.rawValue)
                 .tabItem {
                     Text("Lucrative")
                 }
@@ -27,6 +26,6 @@ struct GameTabView: View {
 
 struct GameTabView_Previews: PreviewProvider {
     static var previews: some View {
-        GameTabView(foodChoice: FoodChoice.burgers, score: .constant(12))
+        GameTabView(foodChoice: FoodChoice.burgers)
     }
 }

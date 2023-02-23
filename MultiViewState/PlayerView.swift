@@ -10,7 +10,7 @@ import SwiftUI
 struct PlayerView: View {
     @State private var name: String = ""
     @State private var age: Double = 18
-    @State private var score: Int = 0
+    @StateObject var stats = Stats()
     
     var body: some View {
         NavigationView {
@@ -20,11 +20,13 @@ struct PlayerView: View {
                     Text("Age: \(age, specifier: "%.f")")
                     Slider(value: $age, in: 1...100, step: 1)
                 }
-                Text("Current Score: \(score)")
-                NavigationLink("Launch!", destination: FoodChoiceView(name: name, age: $age, score: $score))
+                Text("Current Score: \(stats.score)")
+                NavigationLink("Launch!", destination: FoodChoiceView(name: name, age: $age))
             }
+            
             .padding()
         }
+        .environmentObject(stats)
     }
 }
 

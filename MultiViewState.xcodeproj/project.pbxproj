@@ -16,6 +16,7 @@
 		B483900E29A7A89300100C33 /* LucrativeGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483900D29A7A89300100C33 /* LucrativeGameView.swift */; };
 		B483901029A7A8A200100C33 /* PoorGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483900F29A7A8A200100C33 /* PoorGameView.swift */; };
 		B483A5F229A7AC260075FE8F /* FoodChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483A5F129A7AC260075FE8F /* FoodChoice.swift */; };
+		B483A5F429A7B7AC0075FE8F /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483A5F329A7B7AC0075FE8F /* Stats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		B483900D29A7A89300100C33 /* LucrativeGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LucrativeGameView.swift; sourceTree = "<group>"; };
 		B483900F29A7A8A200100C33 /* PoorGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoorGameView.swift; sourceTree = "<group>"; };
 		B483A5F129A7AC260075FE8F /* FoodChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodChoice.swift; sourceTree = "<group>"; };
+		B483A5F329A7B7AC0075FE8F /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				B483900D29A7A89300100C33 /* LucrativeGameView.swift */,
 				B483900F29A7A8A200100C33 /* PoorGameView.swift */,
 				B483A5F129A7AC260075FE8F /* FoodChoice.swift */,
+				B483A5F329A7B7AC0075FE8F /* Stats.swift */,
 			);
 			path = MultiViewState;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				B483A5F229A7AC260075FE8F /* FoodChoice.swift in Sources */,
 				B483901029A7A8A200100C33 /* PoorGameView.swift in Sources */,
 				B4838FFE29A7A69A00100C33 /* PlayerView.swift in Sources */,
+				B483A5F429A7B7AC0075FE8F /* Stats.swift in Sources */,
 				B483900A29A7A7C900100C33 /* FoodChoiceView.swift in Sources */,
 				B4838FFC29A7A69A00100C33 /* MultiViewStateApp.swift in Sources */,
 			);
