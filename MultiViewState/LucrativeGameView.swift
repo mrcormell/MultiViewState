@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LucrativeGameView: View {
     let foodChoiceText: String
-    @State private var score: Int = 0
+    @Binding var score: Int
     
     var body: some View {
         VStack {
@@ -21,6 +21,6 @@ struct LucrativeGameView: View {
 
 struct LucrativeGameView_Previews: PreviewProvider {
     static var previews: some View {
-        LucrativeGameView(foodChoiceText: "Burgers")
+        LucrativeGameView(foodChoiceText: "Burgers", score: .constant(12))
     }
 }

@@ -21,7 +21,7 @@ struct PlayerView: View {
                     Slider(value: $age, in: 1...100, step: 1)
                 }
                 Text("Current Score: \(score)")
-                NavigationLink("Launch!", destination: FoodChoiceView(name: name, age: $age))
+                NavigationLink("Launch!", destination: FoodChoiceView(name: name, age: $age, score: $score))
             }
             .padding()
         }
