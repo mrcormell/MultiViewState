@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct LucrativeGameView: View {
+    let foodChoiceText: String
+    @State private var score: Int = 0
+    
     var body: some View {
-        Text("Lucrative Game")
+        VStack {
+            Text("Lucrative Game for those who like \(foodChoiceText). Score: \(score)")
+            Button("Play Game!", action: { score += 5 })
+        }
     }
 }
 
 struct LucrativeGameView_Previews: PreviewProvider {
     static var previews: some View {
-        LucrativeGameView()
+        LucrativeGameView(foodChoiceText: "Burgers")
     }
 }

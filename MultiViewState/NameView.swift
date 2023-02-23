@@ -15,7 +15,7 @@ struct NameView: View {
             VStack {
                 Text("Enter your name")
                 TextField("Name: ", text: $name)
-                NavigationLink("Launch!", destination: FoodChoiceView())
+                NavigationLink("Launch!", destination: FoodChoiceView(name: name))
             }
             .padding()
         }

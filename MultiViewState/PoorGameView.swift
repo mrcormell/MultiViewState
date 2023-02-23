@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct PoorGameView: View {
+    @State private var score: Int = 0
+    
     var body: some View {
-        Text("Poor Game")
+        VStack {
+            Text("Poor Game, Current Score: \(score)")
+            Button("Play Game!", action: { score += 1 })
+        }
     }
 }
 
