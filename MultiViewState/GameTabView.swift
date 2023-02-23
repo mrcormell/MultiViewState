@@ -14,10 +14,12 @@ struct GameTabView: View {
         TabView {
             LucrativeGameView(foodChoiceText: foodChoice.rawValue)
                 .tabItem {
+                    Image(systemName: "hands.sparkles")
                     Text("Lucrative")
                 }
             PoorGameView()
                 .tabItem {
+                    Image(systemName: "hand.point.down")
                     Text("Poor")
                 }
         }
@@ -27,5 +29,6 @@ struct GameTabView: View {
 struct GameTabView_Previews: PreviewProvider {
     static var previews: some View {
         GameTabView(foodChoice: FoodChoice.burgers)
+            .environmentObject(Stats())
     }
 }
