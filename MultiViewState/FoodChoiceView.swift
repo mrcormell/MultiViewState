@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct FoodChoiceView: View {
-    let name: String
-    @Binding var age: Double
+    @ObservedObject var player: Player
     
     var body: some View {
         VStack {
-            Text("You are \(age, specifier: "%.f") years old!")
+            Text("You are \(player.age, specifier: "%.f") years old!")
             Button("Click to half your age! ", action: {
-                age = age / 2
+                player.age = player.age / 2
             })
             Divider()
-            Text("\(name), please pick your favourite food")
+            Text("\(player.name), please pick your favourite food")
             VStack(spacing: 10) {
                 NavigationLink("Burgers", destination: GameTabView(foodChoice: FoodChoice.burgers))
                 NavigationLink("Pizza", destination: GameTabView(foodChoice: FoodChoice.pizza))
@@ -31,6 +30,6 @@ struct FoodChoiceView: View {
 
 struct FoodChoiceView_Previews: PreviewProvider {
     static var previews: some View {
-        FoodChoiceView(name: "Darren", age: .constant(18))
+        FoodChoiceView(player: Player())
     }
 }

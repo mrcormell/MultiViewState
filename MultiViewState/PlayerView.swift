@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct PlayerView: View {
-    @State private var name: String = ""
-    @State private var age: Double = 18
+    @StateObject var player = Player()
     @StateObject var stats = Stats()
     
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Name: ", text: $name)
+                TextField("Name: ", text: $player.name)
                 HStack {
-                    Text("Age: \(age, specifier: "%.f")")
-                    Slider(value: $age, in: 1...100, step: 1)
+                    Text("Age: \(player.age, specifier: "%.f")")
+                    Slider(value: $player.age, in: 1...100, step: 1)
                 }
                 Divider()
                 VStack {
@@ -26,7 +25,7 @@ struct PlayerView: View {
                     Text("Games Played: \(stats.gamesPlayed)")
                 }
                 .padding()
-                NavigationLink("Launch!", destination: FoodChoiceView(name: name, age: $age))
+                NavigationLink("Launch!", destination: FoodChoiceView(player: player))
             }
             
             .padding()
