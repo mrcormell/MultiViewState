@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4838FFC29A7A69A00100C33 /* MultiViewStateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4838FFB29A7A69A00100C33 /* MultiViewStateApp.swift */; };
-		B4838FFE29A7A69A00100C33 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4838FFD29A7A69A00100C33 /* NameView.swift */; };
+		B4838FFE29A7A69A00100C33 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4838FFD29A7A69A00100C33 /* PlayerView.swift */; };
 		B483900029A7A69C00100C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4838FFF29A7A69C00100C33 /* Assets.xcassets */; };
 		B483900329A7A69C00100C33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B483900229A7A69C00100C33 /* Preview Assets.xcassets */; };
 		B483900A29A7A7C900100C33 /* FoodChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483900929A7A7C900100C33 /* FoodChoiceView.swift */; };
@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		B4838FF829A7A69A00100C33 /* MultiViewState.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiViewState.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4838FFB29A7A69A00100C33 /* MultiViewStateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiViewStateApp.swift; sourceTree = "<group>"; };
-		B4838FFD29A7A69A00100C33 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		B4838FFD29A7A69A00100C33 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		B4838FFF29A7A69C00100C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B483900229A7A69C00100C33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B483900929A7A7C900100C33 /* FoodChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodChoiceView.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				B4838FFB29A7A69A00100C33 /* MultiViewStateApp.swift */,
-				B4838FFD29A7A69A00100C33 /* NameView.swift */,
+				B4838FFD29A7A69A00100C33 /* PlayerView.swift */,
 				B4838FFF29A7A69C00100C33 /* Assets.xcassets */,
 				B483900129A7A69C00100C33 /* Preview Content */,
 				B483900929A7A7C900100C33 /* FoodChoiceView.swift */,
@@ -156,7 +156,7 @@
 				B483900C29A7A86500100C33 /* GameTabView.swift in Sources */,
 				B483A5F229A7AC260075FE8F /* FoodChoice.swift in Sources */,
 				B483901029A7A8A200100C33 /* PoorGameView.swift in Sources */,
-				B4838FFE29A7A69A00100C33 /* NameView.swift in Sources */,
+				B4838FFE29A7A69A00100C33 /* PlayerView.swift in Sources */,
 				B483900A29A7A7C900100C33 /* FoodChoiceView.swift in Sources */,
 				B4838FFC29A7A69A00100C33 /* MultiViewStateApp.swift in Sources */,
 			);

@@ -7,15 +7,21 @@
 
 import SwiftUI
 
-struct NameView: View {
+struct PlayerView: View {
     @State private var name: String = ""
+    @State private var age: Double = 18
+    @State private var score: Int = 0
     
     var body: some View {
         NavigationView {
             VStack {
-                Text("Enter your name")
                 TextField("Name: ", text: $name)
-                NavigationLink("Launch!", destination: FoodChoiceView(name: name))
+                HStack {
+                    Text("Age: \(age, specifier: "%.f")")
+                    Slider(value: $age, in: 1...100, step: 1)
+                }
+                Text("Current Score: \(score)")
+                NavigationLink("Launch!", destination: FoodChoiceView(name: name, age: $age))
             }
             .padding()
         }
@@ -24,6 +30,6 @@ struct NameView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        NameView()
+        PlayerView()
     }
 }
