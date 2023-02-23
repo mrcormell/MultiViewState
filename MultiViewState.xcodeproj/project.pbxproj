@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		B4838FFC29A7A69A00100C33 /* MultiViewStateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4838FFB29A7A69A00100C33 /* MultiViewStateApp.swift */; };
-		B4838FFE29A7A69A00100C33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4838FFD29A7A69A00100C33 /* ContentView.swift */; };
+		B4838FFE29A7A69A00100C33 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4838FFD29A7A69A00100C33 /* NameView.swift */; };
 		B483900029A7A69C00100C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4838FFF29A7A69C00100C33 /* Assets.xcassets */; };
 		B483900329A7A69C00100C33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B483900229A7A69C00100C33 /* Preview Assets.xcassets */; };
+		B483900A29A7A7C900100C33 /* FoodChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483900929A7A7C900100C33 /* FoodChoiceView.swift */; };
+		B483900C29A7A86500100C33 /* GameTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483900B29A7A86500100C33 /* GameTabView.swift */; };
+		B483900E29A7A89300100C33 /* LucrativeGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483900D29A7A89300100C33 /* LucrativeGameView.swift */; };
+		B483901029A7A8A200100C33 /* PoorGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483900F29A7A8A200100C33 /* PoorGameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B4838FF829A7A69A00100C33 /* MultiViewState.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiViewState.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4838FFB29A7A69A00100C33 /* MultiViewStateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiViewStateApp.swift; sourceTree = "<group>"; };
-		B4838FFD29A7A69A00100C33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B4838FFD29A7A69A00100C33 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		B4838FFF29A7A69C00100C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B483900229A7A69C00100C33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B483900929A7A7C900100C33 /* FoodChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodChoiceView.swift; sourceTree = "<group>"; };
+		B483900B29A7A86500100C33 /* GameTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabView.swift; sourceTree = "<group>"; };
+		B483900D29A7A89300100C33 /* LucrativeGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LucrativeGameView.swift; sourceTree = "<group>"; };
+		B483900F29A7A8A200100C33 /* PoorGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoorGameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +60,13 @@
 			isa = PBXGroup;
 			children = (
 				B4838FFB29A7A69A00100C33 /* MultiViewStateApp.swift */,
-				B4838FFD29A7A69A00100C33 /* ContentView.swift */,
+				B4838FFD29A7A69A00100C33 /* NameView.swift */,
 				B4838FFF29A7A69C00100C33 /* Assets.xcassets */,
 				B483900129A7A69C00100C33 /* Preview Content */,
+				B483900929A7A7C900100C33 /* FoodChoiceView.swift */,
+				B483900B29A7A86500100C33 /* GameTabView.swift */,
+				B483900D29A7A89300100C33 /* LucrativeGameView.swift */,
+				B483900F29A7A8A200100C33 /* PoorGameView.swift */,
 			);
 			path = MultiViewState;
 			sourceTree = "<group>";
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4838FFE29A7A69A00100C33 /* ContentView.swift in Sources */,
+				B483900E29A7A89300100C33 /* LucrativeGameView.swift in Sources */,
+				B483900C29A7A86500100C33 /* GameTabView.swift in Sources */,
+				B483901029A7A8A200100C33 /* PoorGameView.swift in Sources */,
+				B4838FFE29A7A69A00100C33 /* NameView.swift in Sources */,
+				B483900A29A7A7C900100C33 /* FoodChoiceView.swift in Sources */,
 				B4838FFC29A7A69A00100C33 /* MultiViewStateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
