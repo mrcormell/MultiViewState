@@ -13,13 +13,18 @@ struct FoodChoiceView: View {
     
     var body: some View {
         VStack {
-            Button("Click to half your age: ", action: {
+            Text("You are \(age, specifier: "%.f") years old!")
+            Button("Click to half your age! ", action: {
                 age = age / 2
             })
+            Divider()
             Text("\(name), please pick your favourite food")
-            NavigationLink("Burgers", destination: GameTabView(foodChoice: FoodChoice.burgers))
-            NavigationLink("Pizza", destination: GameTabView(foodChoice: FoodChoice.pizza))
-            NavigationLink("Pasta", destination: GameTabView(foodChoice: FoodChoice.pasta))
+            VStack(spacing: 10) {
+                NavigationLink("Burgers", destination: GameTabView(foodChoice: FoodChoice.burgers))
+                NavigationLink("Pizza", destination: GameTabView(foodChoice: FoodChoice.pizza))
+                NavigationLink("Pasta", destination: GameTabView(foodChoice: FoodChoice.pasta))
+            }
+            .padding()
         }
     }
 }

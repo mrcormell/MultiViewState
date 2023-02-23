@@ -9,4 +9,5 @@ import Foundation
 
 class Stats: ObservableObject {
     @Published var score: Int = 0
+    @Published var gamesPlayed: Int = 0
 }

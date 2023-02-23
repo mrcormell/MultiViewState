@@ -12,8 +12,12 @@ struct PoorGameView: View {
     
     var body: some View {
         VStack {
-            Text("Poor Game, Current Score: \(stats.score)")
-            Button("Play Game!", action: { stats.score += 1 })
+            Text("Score: \(stats.score)")
+            Spacer()
+            Button("Play Poor Game!", action: { stats.score += 1
+                stats.gamesPlayed += 1
+            })
+            Spacer()
         }
     }
 }
@@ -21,5 +25,6 @@ struct PoorGameView: View {
 struct PoorGameView_Previews: PreviewProvider {
     static var previews: some View {
         PoorGameView()
+            .environmentObject(Stats())
     }
 }

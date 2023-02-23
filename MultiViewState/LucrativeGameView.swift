@@ -13,8 +13,14 @@ struct LucrativeGameView: View {
     
     var body: some View {
         VStack {
-            Text("Lucrative Game for those who like \(foodChoiceText). Score: \(stats.score)")
-            Button("Play Game!", action: { stats.score += 5 })
+            Text("Score: \(stats.score)")
+            Spacer()
+            Text("Oi, you who loves \(foodChoiceText) !")
+            Divider()
+            Button("Play Lucrative Game", action: { stats.score += 5
+                stats.gamesPlayed += 1
+            })
+            Spacer()
         }
     }
 }

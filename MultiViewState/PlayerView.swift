@@ -20,7 +20,12 @@ struct PlayerView: View {
                     Text("Age: \(age, specifier: "%.f")")
                     Slider(value: $age, in: 1...100, step: 1)
                 }
-                Text("Current Score: \(stats.score)")
+                Divider()
+                VStack {
+                    Text("Current Score: \(stats.score)")
+                    Text("Games Played: \(stats.gamesPlayed)")
+                }
+                .padding()
                 NavigationLink("Launch!", destination: FoodChoiceView(name: name, age: $age))
             }
             
